@@ -1,196 +1,327 @@
-# 2º Semestre - Repositório de Estudos e Exercícios
+<div align="center">
 
-## Descrição do projeto
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B4A5A,50:C96F88,100:F3C6D2&height=220&section=header&text=2º%20TERMO&fontSize=48&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Repositório%20de%20Estudos%20e%20Projetos&descAlignY=60&descSize=18"/>
 
-Este repositório reúne atividades, exercícios e projetos desenvolvidos durante o 2º termo do curso, com foco em:
+<br>
 
-- programação em JavaScript com Node.js;
-- lógica de programação;
-- arrays e estruturas de controle;
-- HTML e CSS;
-- modelagem de banco de dados conceitual.
+<a href="https://github.com/luuanalima/2TERMO">
+<img src="https://readme-typing-svg.demolab.com/?font=Georgia&weight=600&size=22&pause=1800&color=8B4A5A&center=true&vCenter=true&width=650&height=50&lines=Estudos+%7C+Projetos+%7C+Pr%C3%A1tica;Desenvolvimento+Web;JavaScript+e+Node.js;L%C3%B3gica+de+Programa%C3%A7%C3%A3o;Modelagem+de+Banco+de+Dados" alt="Animação de texto"/>
+</a>
 
-O projeto reúne materiais de diferentes áreas do curso, organizados em pastas temáticas para facilitar o estudo e a revisão dos conteúdos.
+<br><br>
 
-## Tecnologias utilizadas
+<img src="https://capsule-render.vercel.app/api?type=rect&color=C96F88&height=2&section=header&width=700"/>
 
-- JavaScript
-- Node.js
-- HTML5
-- CSS3
-- Git e GitHub
-- readline-sync
-- modelagem conceitual de banco de dados (BrModelo)
+</div>
 
-## Estrutura de pastas
+## Sobre o projeto
+
+Este repositório reúne os estudos, exercícios e projetos desenvolvidos durante o **2º termo**, organizados em diferentes áreas de aprendizado.
+
+A proposta é registrar a evolução prática em programação, desenvolvimento web, lógica e modelagem de dados, mantendo os conteúdos separados por disciplinas e atividades.
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="180">
+
+<strong>BACKEND</strong>
+
+JavaScript
+Node.js
+Lógica
+
+</td>
+
+<td align="center" width="180">
+
+<strong>WEB</strong>
+
+HTML5
+CSS3
+Estruturação
+
+</td>
+
+<td align="center" width="180">
+
+<strong>DATABASE</strong>
+
+Modelagem
+Relacionamentos
+BrModelo
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+## Estrutura
 
 ```text
-2TERMO/
-├── .git/
-├── BACKEND/
-│   ├── aula1/
-│   │   └── package.json
-│   ├── aula3/
-│   │   └── ex.js
-│   ├── LACOS/
-│   │   ├── array.js
-│   │   ├── array2.js
-│   │   ├── ex5.js
-│   │   ├── package.json
-│   │   └── node_modules/
-│   ├── PBE1/
-│   │   ├── desafio1.js
-│   │   ├── desafio2.js
-│   │   ├── desafio3.js
-│   │   ├── desafio4.js
-│   │   ├── desafio5.js
-│   │   ├── package.json
-│   │   └── desafios/
-│   ├── README
-│   └── texto_readme
-├── BCD/
-│   └── AULA3/
-│       ├── MODELO_RELACIONAMENTO_CONCEITUAL.brM
-│       └── PROJETO_ESCOLA_CONCEITUAL.brM
-├── LIMA/
-│   ├── AULA1/
-│   │   ├── index.html
-│   │   ├── css.html
-│   │   ├── desafio.html
-│   │   └── ...
-│   └── AULA2/
-│       └── index.html
-├── README.md
-└── .gitignore (se existir no repositório)
+2TERMO
+│
+├── BACKEND
+│   ├── aula1
+│   ├── aula3
+│   ├── LACOS
+│   └── PBE1
+│
+├── BCD
+│   └── AULA3
+│
+├── LIMA
+│   ├── AULA1
+│   └── AULA2
+│
+└── README.md
 ```
 
-## Resumo dos exercícios por pasta
+<details>
+<summary><strong>BACKEND</strong></summary>
 
-### BACKEND
+<br>
 
-#### aula1
-- Arquivo de configuração do projeto com dependência do pacote `readline-sync`.
-- Estrutura básica de ambiente para execução de scripts em Node.js.
+Área dedicada aos exercícios de programação utilizando JavaScript e Node.js.
 
-#### aula3
-- Exercício simples de lógica em JavaScript.
-- Demonstra uso de loop `while` para contagem e impressão no console.
+### Conteúdos
 
-#### LACOS
-- `array.js`: exemplo de utilização de arrays.
-- `array2.js`: exercício com entrada de dados e cálculo de média de pesos.
-- `ex5.js`: prática com array e lógica de controle.
+* Estruturas de repetição
+* Arrays
+* Condicionais
+* Entrada de dados
+* Operações matemáticas
+* Exercícios de lógica
+* Pequenos desafios em JavaScript
+* Utilização de `readline-sync`
 
-#### PBE1
-- `desafio1.js`: identificando elementos em arrays e acessando posição específica.
-- `desafio2.js`: cálculo do subtotal de compras com entrada de preços.
-- `desafio3.js`: verificador de votação por idade.
-- `desafio4.js`: cálculo de desconto de conta conforme valor informado.
-- `desafio5.js`: classificação por faixa etária e categoria.
-- `desafio6.js` não foi encontrado no workspace, mas a estrutura de desafios indica continuidade das atividades de lógica condicionada.
+### Principais pastas
 
-> Observação: alguns arquivos apresentam pequenas variações de sintaxe e nomes de variáveis, mas seguem a proposta de prática de lógica e entrada de dados em JavaScript.
+```text
+BACKEND/
+├── aula1/
+├── aula3/
+├── LACOS/
+└── PBE1/
+```
 
-### BCD
+</details>
 
-#### AULA3
-- Modelos conceituais de relacionamento e projeto escolar em BrModelo.
-- Conteúdo voltado para modelagem de banco de dados e estrutura de entidades, relacionamentos e requisitos de sistemas.
+<br>
 
-### LIMA
+<details>
+<summary><strong>BCD</strong></summary>
 
-#### AULA1
-- `index.html`: apresentação inicial com HTML, links e estilização inline.
-- `css.html`: páginas com elementos de HTML e CSS básicos.
-- `desafio.html`: página pessoal em HTML com dados pessoais e informações do autor.
+<br>
 
-#### AULA2
-- `index.html`: continuidade dos estudos em HTML, organização e estruturação de páginas.
+Área voltada para **Banco de Dados**, com atividades de modelagem conceitual.
 
-## Como executar os arquivos com Node.js
+### Conteúdos
 
-Para rodar os scripts JavaScript no terminal, siga os passos abaixo:
+* Entidades
+* Relacionamentos
+* Modelos conceituais
+* Estrutura de sistemas
+* Projeto escolar
+* BrModelo
 
-1. Abra o terminal no diretório do arquivo desejado.
-2. Verifique se o Node.js está instalado:
+```text
+BCD/
+└── AULA3/
+    ├── MODELO_RELACIONAMENTO_CONCEITUAL.brM
+    └── PROJETO_ESCOLA_CONCEITUAL.brM
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>LIMA</strong></summary>
+
+<br>
+
+Área destinada aos estudos de desenvolvimento web.
+
+### Conteúdos
+
+* HTML
+* CSS
+* Estrutura de páginas
+* Links
+* Estilização
+* Organização de conteúdo
+
+```text
+LIMA/
+├── AULA1/
+│   ├── index.html
+│   ├── css.html
+│   └── desafio.html
+│
+└── AULA2/
+    └── index.html
+```
+
+</details>
+
+<br>
+
+## Tecnologias
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/JavaScript-8B4A5A?style=for-the-badge&logo=javascript&logoColor=F7DFE5"/>
+<img src="https://img.shields.io/badge/Node.js-C96F88?style=for-the-badge&logo=node.js&logoColor=FFFFFF"/>
+<img src="https://img.shields.io/badge/HTML5-8B4A5A?style=for-the-badge&logo=html5&logoColor=FFFFFF"/>
+<img src="https://img.shields.io/badge/CSS3-C96F88?style=for-the-badge&logo=css3&logoColor=FFFFFF"/>
+<img src="https://img.shields.io/badge/Git-F3C6D2?style=for-the-badge&logo=git&logoColor=8B4A5A"/>
+<img src="https://img.shields.io/badge/GitHub-6F3948?style=for-the-badge&logo=github&logoColor=FFFFFF"/>
+
+</div>
+
+<br>
+
+## Progresso dos estudos
+
+<div align="center">
+
+<table>
+<tr>
+<td width="220">
+
+<strong>JavaScript</strong>
+
+<br>
+
+████████████████░░░░
+
+<br>
+
+Em desenvolvimento
+
+</td>
+
+<td width="220">
+
+<strong>HTML & CSS</strong>
+
+<br>
+
+██████████████████░░
+
+<br>
+
+Em desenvolvimento
+
+</td>
+
+<td width="220">
+
+<strong>Banco de Dados</strong>
+
+<br>
+
+██████████████░░░░░░
+
+<br>
+
+Em desenvolvimento
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+## Executando os projetos
+
+Para executar os exercícios de JavaScript, é necessário ter o **Node.js** instalado.
 
 ```bash
 node -v
 ```
 
-3. Caso o projeto tenha dependências, instale-as com:
+Caso o projeto possua dependências:
 
 ```bash
 npm install
 ```
 
-4. Execute o arquivo JavaScript:
+Depois, execute o arquivo desejado:
 
 ```bash
 node nome-do-arquivo.js
 ```
 
-Exemplos:
+### Exemplo
 
 ```bash
 cd BACKEND/LACOS
 node array2.js
 ```
 
+Outro exemplo:
+
 ```bash
 cd BACKEND/PBE1
-defs
 node desafio2.js
 ```
 
-## Instruções de Git
+<br>
 
-### Inicializar o repositório
+## Organização do aprendizado
 
-```bash
-git init
+```text
+01
+│
+├── Fundamentos
+│   └── Lógica de programação
+│
+02
+│
+├── JavaScript
+│   ├── Arrays
+│   ├── Condicionais
+│   └── Repetições
+│
+03
+│
+├── Desenvolvimento Web
+│   ├── HTML
+│   └── CSS
+│
+04
+│
+└── Banco de Dados
+    ├── Entidades
+    └── Relacionamentos
 ```
 
-### Adicionar arquivos
+<br>
 
-```bash
-git add .
-```
+<div align="center">
 
-### Registrar commit
+<img src="https://capsule-render.vercel.app/api?type=soft&color=8B4A5A&height=80&section=footer&text=Aprender%20é%20construir%20um%20projeto%20por%20vez&fontSize=18&fontColor=FFFFFF&animation=twinkling"/>
 
-```bash
-git commit -m "Primeiro commit"
-```
+<br><br>
 
-### Conectar ao GitHub
+<strong>Luana Lima</strong>
 
-```bash
-git remote add origin <URL_DO_REPOSITORIO>
-```
+<br>
 
-### Enviar alterações
+<sub>2º Termo · Estudos e Projetos</sub>
 
-```bash
-git push -u origin main
-```
+<br><br>
 
-### Verificar status
+<a href="https://github.com/luuanalima">
+<img src="https://img.shields.io/badge/GitHub-8B4A5A?style=flat-square&logo=github&logoColor=white"/>
+</a>
 
-```bash
-git status
-```
-
-### Verificar histórico
-
-```bash
-git log
-```
-
-## Autor
-
-Luana Lima
-
-## Observações finais
-
-Este repositório funciona como um portfólio de estudos práticos, reunindo exercícios de lógica, desenvolvimento web e modelagem de dados. Ele pode ser usado como referência para revisão de conteúdos, organização de atividades escolares e acompanhamento do progresso ao longo do semestre.
+</div>
