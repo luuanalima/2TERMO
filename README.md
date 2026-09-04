@@ -107,6 +107,6 @@ SQL
 
 <div align="center">
 
-<strong>Desenvolvido por Luana</strong>
+<strong>Desenvolvido por Luana Lima</strong>
 
 </div>
