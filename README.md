@@ -101,5 +101,12 @@ SQL
 │   └── AULA6
 │
 └── README.md
+```
 
+<br>
 
+<div align="center">
+
+<strong>Desenvolvido por Luana</strong>
+
+</div>
