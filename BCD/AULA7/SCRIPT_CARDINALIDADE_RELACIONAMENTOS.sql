@@ -51,3 +51,23 @@ FOREIGN KEY(id_produto) REFERENCES PRODUTO (id_produto),
 FOREIGN KEY(id_fornecedor) REFERENCES FORNECEDOR (id_fornecedor)
 )
 
+-- DESAFIOS
+-- QUESTAO 1
+-- CATEGORIA --- POSSUI --- PRODUTO
+-- (1,N), (1,1)
+
+-- QUESTAO 2
+-- FUNCIONARIO --- REGISTRA --- PEDIDO
+-- (1,N), (1,1)
+
+-- QUESTAO 3
+-- FORNCEDOR --- COMERCIALIZA --- PRODUTO
+-- (1,N), (1,N)
+
+-- QUESTAO 4
+-- CLIENTE --- RESERVA --- MESA
+--(0,N), (1,1)
+
+-- QUESTAO 5
+-- PEDIDO --- POSSUI --- ITEM_PEDIDO
+-- (1,N), (1,1)
