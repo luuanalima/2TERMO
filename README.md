@@ -78,17 +78,22 @@ SQL
 ├── BACKEND
 │   ├── aula1
 │   ├── aula3
+│   ├── aula5
 │   ├── aula8
 │   ├── aula9_sistemas
 │   ├── Aula9-tarde
-│   ├── LACOS
-│   └── PBE1
+│   ├── Aula10
+│   ├── Aula11
+│   ├── avaliacao-pbe1
+│   └── LACOS
+│   
 │
 ├── BCD
 │   ├── AULA3
 │   ├── AULA4
 │   ├── AULA5
 │   ├── AULA6
+│   ├── AULA7
 │   ├── PROJETO
 │   └── SOMATIVA
 │
@@ -98,7 +103,8 @@ SQL
 │   ├── AULA3
 │   ├── AULA4
 │   ├── AULA5
-│   └── AULA6
+│   ├── AULA6
+    └── AULA7
 │
 └── README.md
 ```
