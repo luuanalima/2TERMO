@@ -13,6 +13,7 @@ CREATE TABLE ENTREGA (
 id_delivery int ,
 id_funcionario int ,
 id_entrega int auto_increment primary key PRIMARY KEY
+FOREIGN KEY(id_funcionario) REFERENCES Funcionarios (id_funcionario)
 );
 
 CREATE TABLE REALIZA (
