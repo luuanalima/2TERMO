@@ -1,0 +1,284 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil MS Sans Serif;}{\f1\fnil\fcharset0 MS Sans Serif;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\b\f0\fs16 001 - Tabela: \cf2\b0 ATENDE\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 002 - Tabela: \cf2\b0 CATEGORIA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 003 - Tabela: \cf2\b0 CONSOME+Ficha_tecnica\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 004 - Tabela: \cf2\b0 CONTEM+Item_pedido\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 005 - Campo: \cf2\b0 CPF\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(14) not null unique
+\par 
+\par \cf1\b 006 - Tabela: \cf2\b0 Clientes+Programa_fidelidade\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 007 - Relacionamento: \cf2\b0 Clientes_REALIZA_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 008 - Campo: \cf2\b0 Data_hora\cf1\b 
+\par \cf0\b0 Tipo de dados: timestamp default current_timestamp
+\par 
+\par \cf1\b 009 - Tabela: \cf2\b0 Delivery\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 010 - Relacionamento: \cf2\b0 Delivery_ENTREGA_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 011 - Tabela: \cf2\b0 ENTREGA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 012 - Tabela: \cf2\b0 Estoque\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 013 - Relacionamento: \cf2\b0 Estoque_CONSOME_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 014 - Tabela: \cf2\b0 FORNECEDOR\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 015 - Tabela: \cf2\b0 Funcionarios\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 016 - Relacionamento: \cf2\b0 Funcionarios_ATENDE_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 017 - Relacionamento: \cf2\b0 Funcionarios_ENTREGA_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 018 - Campo: \cf2\b0 Id_cliente\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 019 - Campo: \cf2\b0 Id_cliente\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 020 - Tabela: \cf2\b0 Pagamentos+Pedidos\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 021 - Relacionamento: \cf2\b0 Pagamentos+Pedidos_Delivery_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 022 - Relacionamento: \cf2\b0 Pedidos_ATENDE_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 023 - Relacionamento: \cf2\b0 Pedidos_CONTEM_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 024 - Relacionamento: \cf2\b0 Pedidos_REALIZA_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 025 - Tabela: \cf2\b0 REALIZA\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 026 - Campo: \cf2\b0 ativo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 027 - Campo: \cf2\b0 ativo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 028 - Campo: \cf2\b0 cargo\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(35) not null
+\par 
+\par \cf1\b 029 - Campo: \cf2\b0 cartao\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 030 - Campo: \cf2\b0 categoria\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(35) not null
+\par 
+\par \cf1\b 031 - Campo: \cf2\b0 cnpj\cf1\b 
+\par \cf0\b0 Tipo de dados: char(14)
+\par 
+\par \cf1\b 032 - Campo: \cf2\b0 cpf\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(14) not null
+\par 
+\par \cf1\b 033 - Campo: \cf2\b0 data_admissao\cf1\b 
+\par \cf0\b0 Tipo de dados: date not null
+\par 
+\par \cf1\b 034 - Campo: \cf2\b0 data_cadastro\cf1\b 
+\par \cf0\b0 Tipo de dados: date
+\par 
+\par \cf1\b 035 - Campo: \cf2\b0 data_cadastro\cf1\b 
+\par \cf0\b0 Data de cadastro
+\par 
+\par \cf1\b 036 - Campo: \cf2\b0 data_expiracao_pontos\cf1\b 
+\par \cf0\b0 Tipo de dados: date not null
+\par 
+\par \cf1\b 037 - Campo: \cf2\b0 data_hora_pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados: timestamp default current_timestamp
+\par 
+\par \cf1\b 038 - Campo: \cf2\b0 data_hora_saida\cf1\b 
+\par \cf0\b0 Tipo de dados: timestamp default current_timestamp
+\par 
+\par \cf1\b 039 - Campo: \cf2\b0 data_ultima_atualizacao\cf1\b 
+\par \cf0\b0 Tipo de dados: timestamp default current_timestamp
+\par 
+\par \cf1\b 040 - Campo: \cf2\b0 delivery\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 041 - Campo: \cf2\b0 desconto\cf1\b 
+\par \cf0\b0 Desconto associado a categoria
+\par 
+\par \cf1\b 042 - Campo: \cf2\b0 desconto\cf1\b 
+\par \cf0\b0 Tipo de dados: desconto(1,2)
+\par 
+\par \cf1\b 043 - Campo: \cf2\b0 descontos\cf1\b 
+\par \cf0\b0 Tipo de dados: desconto(1,2)
+\par 
+\par \cf1\b 044 - Campo: \cf2\b0 descricao\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(200)
+\par 
+\par \cf1\b 045 - Campo: \cf2\b0 descricao\cf1\b 
+\par \cf0\b0 Situa\f1\'e7\'e3o da categoria
+\par \f0 
+\par \cf1\b 046 - Campo: \cf2\b0 dinheiro\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 047 - Campo: \cf2\b0 email\cf1\b 
+\par \cf0\b0 Email do cliente
+\par 
+\par \cf1\b 048 - Campo: \cf2\b0 email\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(70)
+\par 
+\par \cf1\b 049 - Campo: \cf2\b0 endereco\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(100)
+\par 
+\par \cf1\b 050 - Campo: \cf2\b0 endereco_entrega\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(35) not null
+\par 
+\par \cf1\b 051 - Campo: \cf2\b0 id_atende\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 052 - Campo: \cf2\b0 id_categoria\cf1\b 
+\par \cf0\b0 Identificador da categoria
+\par 
+\par \cf1\b 053 - Campo: \cf2\b0 id_consome\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 054 - Campo: \cf2\b0 id_contem\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 055 - Campo: \cf2\b0 id_delivery\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 056 - Campo: \cf2\b0 id_delivery\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 057 - Campo: \cf2\b0 id_entrega\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 058 - Campo: \cf2\b0 id_fidelidade\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 059 - Campo: \cf2\b0 id_fornecedor\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 060 - Campo: \cf2\b0 id_funcionario\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 061 - Campo: \cf2\b0 id_funcionario\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 062 - Campo: \cf2\b0 id_funcionario\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 063 - Campo: \cf2\b0 id_insumo\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 064 - Campo: \cf2\b0 id_insumo\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 065 - Campo: \cf2\b0 id_pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 066 - Campo: \cf2\b0 id_pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 067 - Campo: \cf2\b0 id_pedido\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 068 - Campo: \cf2\b0 id_pedido\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 069 - Campo: \cf2\b0 id_pedido\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 070 - Campo: \cf2\b0 id_pedido\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 071 - Campo: \cf2\b0 id_pedido\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 072 - Campo: \cf2\b0 id_produto\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 073 - Campo: \cf2\b0 id_produto\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 074 - Campo: \cf2\b0 id_produto\cf1\b 
+\par \cf0\b0 Tipo de dados: int auto_increment primary key
+\par 
+\par \cf1\b 075 - Campo: \cf2\b0 id_realiza\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 076 - Campo: \cf2\b0 inativo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 077 - Campo: \cf2\b0 inativo\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 078 - Campo: \cf2\b0 kg\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 079 - Campo: \cf2\b0 ml\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 080 - Campo: \cf2\b0 nivel_cliente\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(35) not null
+\par 
+\par \cf1\b 081 - Campo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(20) not null
+\par 
+\par \cf1\b 082 - Campo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 Nome da categoria
+\par 
+\par \cf1\b 083 - Campo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(20) not null
+\par 
+\par \cf1\b 084 - Campo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(20) not null
+\par 
+\par \cf1\b 085 - Campo: \cf2\b0 nome\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(60)
+\par 
+\par \cf1\b 086 - Campo: \cf2\b0 nome_entregador\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(20) not null
+\par 
+\par \cf1\b 087 - Campo: \cf2\b0 nome_insumo\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(35) not null
+\par 
+\par \cf1\b 088 - Campo: \cf2\b0 observacao\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(200)
+\par 
+\par \cf1\b 089 - Campo: \cf2\b0 peso\cf1\b 
+\par \cf0\b0 Tipo de dados: float
+\par 
+\par \cf1\b 090 - Campo: \cf2\b0 pix\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 091 - Campo: \cf2\b0 preco_unitario\cf1\b 
+\par \cf0\b0 Tipo de dados: decimal(1,2)
+\par 
+\par \cf1\b 092 - Campo: \cf2\b0 presencial\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 093 - Tabela: \cf2\b0 produtos\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 094 - Relacionamento: \cf2\b0 produtos_CONSOME_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 095 - Relacionamento: \cf2\b0 produtos_CONTEM_1\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 096 - Campo: \cf2\b0 quantidade_atual\cf1\b 
+\par \cf0\b0 Tipo de dados: int, NOT NULL
+\par 
+\par \cf1\b 097 - Campo: \cf2\b0 quantidade_minima\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 098 - Campo: \cf2\b0 salario\cf1\b 
+\par \cf0\b0 Tipo de dados: decimal(1,2)
+\par 
+\par \cf1\b 099 - Campo: \cf2\b0 saldo_pontos\cf1\b 
+\par \cf0\b0 Tipo de dados: int, NOT NULL
+\par 
+\par \cf1\b 100 - Campo: \cf2\b0 status_entrega\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(30)
+\par 
+\par \cf1\b 101 - Campo: \cf2\b0 status_pagamento\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(35) not null
+\par 
+\par \cf1\b 102 - Campo: \cf2\b0 taxa_entrega\cf1\b 
+\par \cf0\b0 Tipo de dados: decimal(1,2)
+\par 
+\par \cf1\b 103 - Campo: \cf2\b0 telefone\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(11) not null
+\par 
+\par \cf1\b 104 - Campo: \cf2\b0 telefone\cf1\b 
+\par \cf0\b0 Tipo de dados: varchar(20)
+\par 
+\par \cf1\b 105 - Campo: \cf2\b0 un\cf1\b 
+\par \cf0\b0 
+\par \cf1\b 106 - Campo: \cf2\b0 valor_pago\cf1\b 
+\par \cf0\b0 Tipo de dados: decimal(1,2)
+\par 
+\par \cf1\b 107 - Campo: \cf2\b0 valor_total\cf1\b 
+\par \cf0\b0 Tipo de dados: decimal(1,2)
+\par 
+\par 
+\par }
+ 
