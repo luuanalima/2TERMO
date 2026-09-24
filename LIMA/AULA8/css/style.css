@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FFF9F3;
+    color: #222;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#cabecalho-inicio,
+footer {
+    width: 92%;
+    margin: 25px auto 0;
+    height: 60px;
+    background: #5A321B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#cabecalho-inicio h1 {
+    font-size: 14px;
+    color: #9A887A;
+}
+
+#cabecalho-inicio nav {
+    display: flex;
+    gap: 20px;
+}
+
+#cabecalho-inicio nav a {
+    font-size: 8px;
+}
+
+main {
+    width: 92%;
+    margin: auto;
+}
+
+.inicio { 
+    
+
+} 
