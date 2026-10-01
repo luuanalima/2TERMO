@@ -1,0 +1,17 @@
+.equipe {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* justify-content: space-between;  */
+    /* align-items: center;  */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    justify-content: space-evenly;
+}
+
+.cards{
+display: flex;
+gap: 20px;
+}
