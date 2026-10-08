@@ -1,0 +1,92 @@
+ /* 1. .grade { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+} */
+ /* 2. .grade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+} */
+
+ /* 3.  */
+ /* .grade {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+} */
+/* a primeira fica maior, primeira coluna 2 partes, segunda coluna 1 parte */
+
+ /* 4. .grade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+} */
+
+
+/* .grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* Celular */
+/* @media (max-width: 500px){
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+/* @media (max-width: 768px){
+    .grade{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Computador */
+/* @media (max-width: 1024px){
+    .grade {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */ 
+/* 
+.grade{
+    display: grid;
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr));
+    gap: 23px;
+}; */
+
+/* DESAFIO SENAI */
+
+.solucoes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Telas medias */
+@media (max-width: 768px) {
+    .solucoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telas pequenas */
+@media (max-width: 480px) {
+    .solucoes {
+        grid-template-columns: 1fr;
+    }
+}
+
+.solucoes {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr));
+    gap: 24px;
+}
+
+/* Eu escolheria auto-fit, minmax, porque deixa o codigo menor */

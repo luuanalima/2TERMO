@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F3;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#cabecalho-inicio {
+    background-color: #5A321B;
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho-inicio h1 {
+    font-size: 20px;
+}
+
+#cabecalho-inicio nav {
+    display: flex;
+    gap: 18px;
+}
+
+#cabecalho-inicio nav a {
+    color: white;
+    font-size: 11px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.banner {
+    background-color: #FFF9F3;
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-conteudo {
+    width: 45%;
+}
+
+.banner-conteudo p {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.banner-conteudo h1 {
+    font-size: 25px;
+    color: #5A321B;
+    margin-bottom: 10px;
+}
+
+.banner-conteudo a {
+    background-color: #9A887A;
+    color: white;
+    padding: 7px 13px;
+    font-size: 10px;
+}
+
+.banner-imagem {
+    width: 45%;
+}
+
+.banner-imagem img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #A9A887;
+}
+
+/* sobre */
+
+.sobre-conteudo {
+    padding: 25px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.sobre-cabecalho {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.sobre-cabecalho h2 {
+    font-size: 15px;
+    color: #5A321B;
+    margin: 0 0 10px;
+}
+
+.sobre-conteudo p {
+    grid-column: 1;
+    grid-row: 2;
+    width: 140px;
+    margin: 0 0 15px;
+    font-size: 10px;
+}
+
+.sobre-conteudo a {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    background-color: #9A887A;
+    color: white;
+    padding: 8px 20px;
+    font-size: 7px;
+}
+
+.sobre-conteudo figure {
+    grid-column: 2;
+    grid-row: 1;
+    width: 170px;
+    margin: 0;
+    justify-self: center;
+}
+
+.sobre-conteudo figure img {
+    width: 170px;
+    height: 105px;
+    object-fit: cover;
+}
+
+/* cafes */
+
+.cafes_conteudo {
+    padding: 40px;
+}
+
+.cafe-cabecalho {
+    margin-bottom: 20px;
+}
+
+.cafe-cabecalho p {
+    font-size: 10px;
+}
+
+.cafe-cabecalho h2 {
+    font-size: 20px;
+    color: #5A321B;
+}
+
+.lista-cafe {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.lista-cafe li {
+    width: 33%;
+}
+
+.card-cafe {
+    text-align: center;
+}
+
+.card-cafe img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.card-cafe h3 {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.card-cafe p {
+    font-size: 9px;
+    margin: 5px;
+}
+
+.card-cafe strong {
+    background-color: #9A887A;
+    color: white;
+    padding: 4px 10px;
+    font-size: 9px;
+}
+
+/* ambiente */
+
+.ambiente-cabecalho {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ambiente-conteudo {
+    width: 50%;
+}
+
+.ambiente-conteudo h2 {
+    font-size: 20px;
+    color: #5A321B;
+}
+
+.ambiente-conteudo p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.ambiente-imagem {
+    width: 40%;
+}
+
+.ambiente-imagem img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.ambiente-cabecalho > a {
+    background-color: #9A887A;
+    color: white;
+    padding: 6px 12px;
+    font-size: 9px;
+}
+
+/* contato */
+
+.contato-cabecalho {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contato-conteudo {
+    width: 45%;
+}
+
+.contato-conteudo h2 {
+    font-size: 20px;
+    color: #5A321B;
+}
+
+.contato-conteudo p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.contato-cabecalho form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contato-cabecalho label {
+    font-size: 9px;
+}
+
+.contato-cabecalho input,
+.contato-cabecalho textarea {
+    border: 1px solid #A9A887;
+    padding: 6px;
+}
+
+.contato-cabecalho textarea {
+    height: 60px;
+}
+
+.contato-cabecalho button {
+    background-color: #94606B;
+    color: white;
+    border: none;
+    padding: 7px;
+    font-size: 9px;
+}
+
+/* footer */
+
+footer {
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    background-color: #5A321B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.intagram-smartcoffee img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
