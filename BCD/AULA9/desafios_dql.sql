@@ -67,6 +67,6 @@ GROUP BY cidade
 HAVING COUNT(*) >= 2;
 
 -- 15. Calcule o faturamento total considerando apenas pedidos FINALIZADOS.
-SELECT SUM(valor_total) AS total
+SELECT SUM(valor_total) AS Faturamento
 FROM pedido
 WHERE status_pedido = 'Finalizando';
