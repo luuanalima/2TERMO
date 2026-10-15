@@ -1,28 +1,24 @@
-/* VARIÁVEIS PARA FORMATAÇÃO GERAL
-CRIAÇÃO DE LAYOUT DE CORES */
+/* VÁRIÁVEIS PARA FORMATAÇÃO GERAL */
+/* CRIAÇÃO DE LAYOUT DE CORES */
+/* ROOT é um espaço utilizado para declarar variáveis */
+
 :root {
-    /* paleta de cores */
+    /* Paleta de Cores */
     --espresso: #2B170D;
     --cafe: #5A321B;
+    --caramelo: #C66A1A;
+    --creme: #F3E6D7;
     --marfim: #FFF9F3;
     --taupe: #9A887A;
-    --caramelo: #C66A1A;
     --texto: #1E140F;
     --branco: #ffffff;
+
 }
 
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--espresso);
-    padding: 20px 8%;
-}
-
-/* Configurações básicas */
+/* Configurações Básicas */
 * {
     box-sizing: border-box;
-    /* * Aplica o conteúdo a total o site */
+    /* * Aplicar o conteúdo a total o site */
 }
 
 html {
@@ -33,9 +29,8 @@ body {
     margin: 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: var(--texto);
-    background-color: var(--espresso);
+    background-color: var(--marfim);
     line-height: 1.6;
-
 }
 
 img {
@@ -49,7 +44,7 @@ h1, h2, h3 {
     color: var(--espresso);
 }
 
-h1{
+h1 {
     font-size: 3rem;
     line-height: 1.1;
 }
@@ -62,19 +57,13 @@ h3 {
     font-size: 1.25rem;
 }
 
-
-/* nav {
+.cabecalho {
     display: flex;
-    align-items: right;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--espresso);
-    padding: 0px;
+    padding: 20px 8%;
 }
-
-nav a {    
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-} */
 
 .menu {
     display: flex;
@@ -90,8 +79,33 @@ nav a {
     font-weight: 500;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: var(--caramelo);
+}
+
+.menu a:focus-visible {
+    outline: 3px solid var(--caramelo);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: var(--creme);
+    gap: 48px;
+    padding: 80px 8%;
+}
+
+.banner-conteudo, .banner-imagem {
+    flex: 1;
+}
+
+.banner-imagem {
+    margin: 0;
+}
+
+.banner-imagem img {
+    width: 100%;
+    border-radius: 18px;
 }
 
 .btn-principal {
@@ -109,18 +123,26 @@ nav a {
     background-color: var(--cafe);
 }
 
-.btn-principal{
+.btn-principal {
     transition: background-color 0.2s ease;
 }
 
-.banner {
+/* nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F3E6D7;
-    gap: 23px;
-    padding: 60px 8%;
+    align-items: right;
+    background-color: #2B170D;
+    padding: 0px;
 }
+
+nav a {    
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+} */
+
+
+
+
 
 .banner-texto {
     font-size: 20px;
