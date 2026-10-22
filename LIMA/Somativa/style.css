@@ -1,0 +1,34 @@
+/* Celular */
+@media (max-width: 500px){
+    .grid-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    .grid-lista{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Computador */
+@media (max-width: 1024px){
+    .grid-lista {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+}
+
+a {
+    text-decoration: none;
+}
+
+.play{
+    color: blue;
+    
+}
