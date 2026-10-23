@@ -299,13 +299,21 @@ footer h1 {
     font-size: 14px;
 }
 
+.eu{
+  font-size: 10px;
+}
+
+
 footer p,
 footer a {
     font-size: 10px;
 }
 
-footer a {
-    color: #16d5f3;
+footer a{
+    color: #0f1ff1;
+}
+footer a:hover{
+    color:#ff0066;
 }
 
 footer .play,
