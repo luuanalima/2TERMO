@@ -94,6 +94,9 @@ SQL
 │   ├── AULA5
 │   ├── AULA6
 │   ├── AULA7
+│   ├── AULA8
+│   ├── AULA9
+│   ├── AULA10
 │   ├── PROJETO
 │   └── SOMATIVA
 │
@@ -104,7 +107,11 @@ SQL
 │   ├── AULA4
 │   ├── AULA5
 │   ├── AULA6
-    └── AULA7
+│   ├── AULA7
+│   ├── AULA9
+│   ├── AULA10
+│   ├── SMARTCOFFEE
+│   └── Somativa
 │
 └── README.md
 ```
