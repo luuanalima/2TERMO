@@ -1,3 +1,4 @@
+-- Active: 1788519232579@@127.0.0.1@3306@smartcoffee_dml_luana
 USE smartcoffee_dml_luana;
 
 -- IMPORTANTE:
@@ -102,4 +103,99 @@ INSERT INTO categoria (nome) VALUES
 ('Excluir Depois');
 DELETE from categoria
 WHERE nome = 'Excluir Depois';
+
+-- PARTE D - INTEGRIDADE E ERROS CONTROLADOS
+-- Execute uma tentativa por vez. Depois deixe o comando problemático comentado.
+
+-- 17. Tente inserir um produto com id_categoria = 9999.
+-- Qual restrição impediu a operação?
+INSERT INTO produtos (nome, preco, id_categoria)
+VALUES ('Café Especial', 18.90, 9999);
+-- A restrição FOREIGN KEY (chave estrangeira) impede a operação,
+-- pois a categoria informada não existe na tabela de categorias.
+
+-- 18. Tente cadastrar um cliente usando 'ana@email.com'.
+-- Qual restrição impediu a operação?
+INSERT INTO clientes (nome, email)
+VALUES ('Ana Souza', 'ana@email.com');
+-- A restrição UNIQUE impede a operação se o e-mail já estiver
+-- cadastrado e a coluna email possuir essa restrição.
+
+-- 19. Tente criar um pedido com id_cliente = 9999.
+-- Qual restrição impediu a operação?
+INSERT INTO pedidos (id_cliente, data_pedido)
+VALUES (9999, CURRENT_TIMESTAMP);
+-- A restrição FOREIGN KEY impede a operação, pois o cliente
+-- informado não existe na tabela de clientes.
+
+-- 20. Escreva em comentários a diferença entre os três erros anteriores.
+-- FOREIGN KEY: impede referências a registros inexistentes
+-- em outra tabela.
+--
+-- UNIQUE: impede valores duplicados em uma coluna ou conjunto
+-- de colunas que exige unicidade.
+--
+-- Os erros 17 e 19 são violações de chave estrangeira,
+-- enquanto o erro 18 é uma violação de unicidade.
+
+-- PARTE E - DESAFIO COMPLETO COM TRANSAÇÃO
+
+-- 21. Inicie uma transação.
+START TRANSACTION;
+
+-- 22. Dentro dela, cadastre um cliente, um pedido e dois itens relacionados.
+INSERT INTO clientes (nome, email)
+VALUES ('Carlos Lima', 'carlos.lima@email.com');
+
+INSERT INTO pedidos (id_cliente, data_pedido)
+VALUES (@id_cliente_pedido, CURRENT_TIMESTAMP);
+
+-- 23. Faça uma consulta com JOIN comprovando que os registros existem
+--     enquanto a transação está aberta.
+SELECT
+    c.nome AS cliente,
+    p.id_pedido,
+    ip.id_produto,
+    ip.quantidade
+FROM clientes c
+JOIN pedidos p
+    ON p.id_cliente = c.id_cliente
+JOIN itens_pedido ip
+    ON ip.id_pedido = p.id_pedido
+WHERE c.id_cliente = @id_cliente_teste;
+
+-- 24. Execute ROLLBACK e depois use SELECT para provar que o cadastro foi desfeito.
+ROLLBACK;
+
+-- 25. Repita o processo com novos dados e finalize usando COMMIT.
+--     Depois consulte os registros persistidos.
+SELECT *
+FROM clientes
+WHERE email = 'carlos.lima@email.com';
+
+-- DESAFIO EXTRA
+-- 26. Escolha uma situação realista do SmartCoffee que exija INSERT + UPDATE
+--     ou UPDATE + DELETE lógico. Descreva a regra de negócio e implemente.
+
+-- Consultar o pedido antes da alteração
+SELECT *
+FROM pedidos
+WHERE id_pedido = 1;
+
+-- Iniciar uma transação
+START TRANSACTION;
+
+-- Cancelar somente pedidos ainda não enviados
+UPDATE pedidos
+SET status = 'CANCELADO'
+WHERE id_pedido = 1
+  AND status = 'PENDENTE';
+
+-- Conferir o resultado
+SELECT *
+FROM pedidos
+WHERE id_pedido = 1;
+
+-- Confirmar a alteração
+COMMIT;
 
