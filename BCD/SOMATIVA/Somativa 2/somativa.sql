@@ -281,7 +281,7 @@ COMMIT;
 -- 25:
 -- 1- Para isso não acontecer utilizar a regra 'unique'
 -- 2- O 'unique' é a melhor opção para não acontecer de dar erro
--- 3- Teremos que utilizar o check mas irá travar com a quantidade negativa
+-- 3- Teremos que utilizar o check mas irá travar por conta da quantidade negativa
 -- 4- O empréstimo precisa de um usuario para ser cadastrado, ou seja o empréstimo não sera criado
 -- 5- Não será possivel pois esta usando o constraint junto com as references
 -- 6- É uma transação que acontece, e se ocorrer uma transação errada, utiliza-se o ROLLBACK
