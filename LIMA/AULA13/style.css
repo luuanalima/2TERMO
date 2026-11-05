@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(206, 230, 230);
+    line-height: 1.5;
+}
+
+h2 {
+    line-height: 1.15;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+p {
+
+}
