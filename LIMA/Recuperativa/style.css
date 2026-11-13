@@ -155,3 +155,27 @@ footer a {
     text-decoration: none;
     font-size: 14px;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .cabecalho-inicio {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cabecalho-inicio nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardes ul {
+        grid-template-columns: 1fr;
+    }
+
+}
