@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <title>Exercícios - Bootstrap</title>
+</head>
+<body>
+    <!-- Exercício 01 - Cores
+Crie um título azul, parágrafo secundário e uma seção escura com texto branco. -->
+<section class="container py-5">
+            <h1 class="text-primary text-center mb-4">ex-1</h1>
+
+            <p class="text-secondary">paragrafo secundario</p>
+        </section>
+
+        <section class="bg-dark text-success p-4">
+            <h2 class="text-white">seção escura</h2>
+
+</section>
+
+    <!-- Exercício 02 - Espaçamentos
+Crie três seções e compare p-1, p-3 e p-5. Depois repita com margin. -->
+    <section class="p-1">
+        <h1 class="text-danger">p-1</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta corrupti accusantium ipsum dignissimos qui accusamus, saepe ex ipsa reiciendis omnis asperiores placeat dolor animi voluptatem exercitationem dicta quae molestias?
+    </section>
+    <section class="p-3">
+        <h1 class="text-danger">p-3</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta corrupti accusantium ipsum dignissimos qui accusamus, saepe ex ipsa reiciendis omnis asperiores placeat dolor animi voluptatem exercitationem dicta quae molestias?
+    </section>
+    <section class="p-5">
+        <h1 class="text-danger">p-5</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta corrupti accusantium ipsum dignissimos qui accusamus, saepe ex ipsa reiciendis omnis asperiores placeat dolor animi voluptatem exercitationem dicta quae molestias?
+    </section>
+    <section class="m-1">
+        <h1 class="text-danger">m-1</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta corrupti accusantium ipsum dignissimos qui accusamus, saepe ex ipsa reiciendis omnis asperiores placeat dolor animi voluptatem exercitationem dicta quae molestias?
+    </section>
+    <section class="m-3">
+        <h1 class="text-danger">m-3</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta corrupti accusantium ipsum dignissimos qui accusamus, saepe ex ipsa reiciendis omnis asperiores placeat dolor animi voluptatem exercitationem dicta quae molestias?
+    </section>
+    <section class="m-5">
+        <h1 class="text-danger">m-5</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta corrupti accusantium ipsum dignissimos qui accusamus, saepe ex ipsa reiciendis omnis asperiores placeat dolor animi voluptatem exercitationem dicta quae molestias?
+    </section>
+<!-- Exercício 03 - Botões
+Crie botões primary, success, danger, dark e outline-primary. Teste também btn-lg e btn-sm. -->
+    <section class="text-center">
+        <a href="#btn" class="btn btn-primary btn-lg">Primary</a>
+        <a href="#btn" class="btn btn-success btn-sm">Success</a>
+        <a href="#btn" class="btn btn-danger btn-lg">Danger</a>
+        <a href="#btn" class="btn btn-dark btn-sm">Dark</a>
+        <a href="#btn" class="btn btn-outline-primary btn-lg">outline-primary</a>
+    </section>
+    <br>
+
+<!-- Exercício 04 - Containers
+Crie duas páginas ou regiões iguais: uma com container e outra com container-fluid. Registre a
+diferença. -->
+    <section class="container">
+        <h1 class="text-info ">Container</h1>
+        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum voluptatum aliquid, sit libero sunt. Cumque ex exercitationem consectetur rerum, quidem impedit eum consequuntur quos molestias numquam, recusandae explicabo necessitatibus!</p>
+    </section>
+    <br>
+    <section class="container-fluid">
+        <h1 class="text-info">Container-Fluid</h1>
+        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum voluptatum aliquid, sit libero sunt. Cumque ex exercitationem consectetur rerum, quidem impedit eum consequuntur quos molestias numquam, recusandae explicabo necessitatibus!</p>
+    </section>
+    <br>
+<!-- R: A diferença seria que o container ficou mais recuado da pagina do que o container-fluid -->
+
+
+<!-- Exercício 05 - Grid responsivo
+Crie quatro conteúdos com comportamento:
+celular: 1 por linha;
+tablet: 2 por linha;
+desktop: 4 por linha. -->
+    <section class="container">
+        <div class="row">
+            <article class="col-12 col-md-6 col-md-4">
+                <h2>Conteúdo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veniam, enim facilis accusantium facere nobis atque, est dolore illo quos numquam perspiciatis repellendus saepe sit cumque eveniet illum animi odit.</p>
+            </article>
+            <article class="col-12 col-md-6 col-md-4">
+                <h2>Conteúdo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti optio corrupti doloribus, tempora eius asperiores quisquam corporis sequi voluptatum animi non id inventore maxime maiores esse vitae, molestiae, qui voluptatem!</p>
+            </article>
+            <article class="col-12 col-md-6 col-md-4">
+                <h2>Conteúdo 3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, expedita laudantium amet quis nesciunt esse provident saepe explicabo aspernatur similique quia fuga dicta accusantium necessitatibus in. Amet laudantium reprehenderit ad!</p>
+            </article>
+            <article class="col-12 col-md-6 col-md-4">
+                <h2>Conteúdo 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae culpa error provident? Fugiat corrupti, doloremque aut laudantium ipsa natus sit distinctio ipsum repudiandae dignissimos sed impedit commodi consequuntur eos!</p>
+            </article>
+        </div>
+    </section>
+
+</body>
+</html>
